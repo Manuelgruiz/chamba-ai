@@ -1,0 +1,13 @@
+# Entornos virtuales de Python
+venv/
+__pycache__/
+*.pyc
+
+# Binarios y ejecutables
+*.exe
+*.out
+
+# Configuración local y datos
+.env
+data/raw_jobs/*
+!data/raw_jobs/.gitkeep
