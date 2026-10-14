@@ -11,3 +11,4 @@ __pycache__/
 .env
 data/raw_jobs/*
 !data/raw_jobs/.gitkeep
+*node_modules/
