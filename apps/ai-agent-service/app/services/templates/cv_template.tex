@@ -1,0 +1,75 @@
+\documentclass[10pt, a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage[empty]{fullpage}
+\usepackage{geometry}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{titlesec}
+
+\definecolor{primary}{HTML}{1A2B4C}
+\definecolor{secondary}{HTML}{2C3E50}
+\definecolor{textgray}{HTML}{4A5568}
+
+\geometry{left=0.8cm, top=0.7cm, right=0.8cm, bottom=0.7cm}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+
+\titleformat{\section}{\color{primary}\large\bfseries\scshape}{}{0em}{}[\color{primary}\titlerule\vspace{-2pt}]
+
+\begin{document}
+
+% ENCABEZADO
+\begin{minipage}[t]{1.0\textwidth}
+    {\Huge \bfseries \color{primary} {{ FULL_NAME }}} \\[6pt]
+    {\Large \bfseries \color{secondary} {{ TITLE }}} \\[4pt]
+    {\small \color{textgray} {{ SUBTITLE }}}
+\end{minipage}
+
+\vspace{16pt}
+
+% ESTRUCTURA DE 2 COLUMNAS
+\begin{minipage}[t]{0.33\textwidth}
+
+    \section{Contacto}
+    \small
+    \textbf{Ubicación:} {{ LOCATION }} \\[4pt]
+    \textbf{Teléfono:} {{ PHONE }} \\[4pt]
+    \textbf{Correo:} \href{mailto:{{ EMAIL }}}{{\ EMAIL }}} \\[4pt]
+    \textbf{LinkedIn:} {{ LINKEDIN }} \\[4pt]
+    \textbf{GitHub:} {{ GITHUB }}
+
+    \vspace{20pt}
+
+    \section{Habilidades Técnicas}
+    \small
+    {{ TECHNICAL_SKILLS_BLOCK }}
+
+    \vspace{20pt}
+
+    \section{Idiomas}
+    \small
+    {{ LANGUAGES_BLOCK }}
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.63\textwidth}
+
+    \section{Perfil Profesional}
+    \small \color{textgray}
+    {{ PROFESSIONAL_SUMMARY }}
+
+    \vspace{16pt}
+
+    \section{Experiencia Laboral}
+    {{ WORK_EXPERIENCE_BLOCK }}
+
+    \vspace{16pt}
+
+    \section{Educación}
+    {{ EDUCATION_BLOCK }}
+
+\end{minipage}
+
+\end{document}
